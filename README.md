@@ -33,11 +33,13 @@ For the boat:
   - nRF24l01+ PA+LNA module
   - L298N motor driver
   - 12V 3.4Ah lead acid battery
+  <br/>
   
-  
-Q: what are the different versions of the sketches?
+Q: What are the different versions of the sketches?
 
 A: Whenever a significant amount of new functionality was added I started a new version.
+Please note that controller and rcboat versions are not synced, they have their own versions.
+
 For the controller:
 - v1: Simple transmission using int array. Used with rcboat v2.
 - v2: Introduction of structures, used with rcboat v3.
