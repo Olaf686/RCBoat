@@ -2,11 +2,11 @@
 
 This project contains resource material for an Arduino based radio controlled boat.
 
+![rcboat](https://github.com/Olaf686/RCBoat/blob/main/RC%20Boat.jpg)
 
+## Index
 
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+This page contains the following:
 
 ```bash
 pip install foobar
