@@ -32,7 +32,7 @@ For the boat:
   - QMC5883L compass
   - nRF24l01+ PA+LNA module
   - L298N motor driver
-  - JGY-370 DC motor (100 rpm)
+  - JGY-370 DC motors (100 rpm)
   - 12V 3.4Ah lead acid battery
   <br/>
   
