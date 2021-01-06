@@ -14,7 +14,7 @@ This page contains the following:
 
 ## Building and testing
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=36PeCzNrH44" target="_blank"><img src="https://github.com/Olaf686/RCBoat/blob/main/Pictures%20and%20videos/Build.jpg" alt="IMAGE ALT TEXT HERE"  border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=36PeCzNrH44" target="_blank"><img src="https://github.com/Olaf686/RCBoat/blob/main/Pictures%20and%20videos/Build%20and%20test.jpg" alt="building and testing"  border="10" /></a>
 
 
 
