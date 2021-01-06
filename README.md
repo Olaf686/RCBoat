@@ -14,7 +14,7 @@ This project contains resource material for an Arduino based radio controlled bo
 
 ## FAQ
 
-Q: **What components did you use?**
+Q: What components did you use?
 
 A: Here is a list of main electronic components:
 
@@ -34,7 +34,8 @@ For the boat:
   - L298N motor driver
   - 12V 3.4Ah lead acid battery
   
-Q: **what are the different versions of the sketches?**
+  
+Q: what are the different versions of the sketches?
 
 A: Whenever a significant amount of new functionality was added I started a new version.
 For the controller:
