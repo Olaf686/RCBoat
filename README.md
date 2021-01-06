@@ -11,3 +11,5 @@ This page contains the following:
 - Sketches for the controller
 - Circuit schematics
 - Pictures and video material
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=36PeCzNrH44" target="_blank"><img src="http://img.youtube.com/vi/36PeCzNrH44/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
