@@ -8,16 +8,6 @@ This project contains resource material for an Arduino based radio controlled bo
 
 This page contains the following:
 
-```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+- Sketches for the boat
+- Sketches for the controller
+- Pictures and video material
