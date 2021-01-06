@@ -49,6 +49,6 @@ For the controller:
 
 For the boat:
 - v1: Testing with motor driver and wireless connection. Direct value written to motor. Only for testing.
-- v2: Introduction of PWM target values. Motors now accelerate more slowly to reduce torque on axis. Used for maiden voyage.
+- v2: Introduction of PWM target values. Motors accelerate slower to reduce torque on axis. Used for maiden voyage.
 - v3: Transition from Uno to Mega, GPS and compass code added. Only for testing.
 - v4: Autononous mode ("autoMode") functionality added. Succesfully tested in the water.
