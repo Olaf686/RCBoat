@@ -14,7 +14,7 @@ This project contains resource material for an Arduino based radio controlled bo
 
 ## FAQ
 
-### What components did you use? ###
+Q: What components did you use?
 
 A: Here is a list of main electronic components:
 
