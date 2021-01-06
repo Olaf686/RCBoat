@@ -14,8 +14,10 @@ This project contains resource material for an Arduino based radio controlled bo
 
 ## FAQ
 
-**What components did you use?**
-  
+Q: **What components did you use?**
+
+A: Here is a list of main electronic components:
+
 For the controller:
   - Arduino Uno r3
   - 74HC4067DB multiplexer
@@ -32,9 +34,9 @@ For the boat:
   - L298N motor driver
   - 12V 3.4Ah lead acid battery
   
-**what are the different versions of the sketches?**
+Q: **what are the different versions of the sketches?**
 
-Whenever a significant amount of new functionality was added I started a new version.
+A: Whenever a significant amount of new functionality was added I started a new version.
 For the controller:
 - v1: Simple transmission using int array. Used with rcboat v2.
 - v2: Introduction of structures, used with rcboat v3.
