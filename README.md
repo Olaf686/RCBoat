@@ -52,3 +52,11 @@ For the boat:
 - v2: Introduction of PWM target values. Motors accelerate slower to reduce torque on axis. Used for maiden voyage.
 - v3: Transition from Uno to Mega, GPS and compass code added. Only for testing.
 - v4: Autononous mode ("autoMode") functionality added. Succesfully tested in the water.
+<br/>
+
+Q: Do the lights work?
+
+A: Navigation lights (green and red), strobe light (white) and interior lights are controlled by transistor circuits:
+
+![rcboat](https://github.com/Olaf686/RCBoat/blob/main/Pictures%20and%20videos/lights.gif)
+
