@@ -14,10 +14,10 @@ This project contains resource material for an Arduino based radio controlled bo
 
 ## FAQ
 
-*What components did you use?*
+**What components did you use?**
   
 For the controller:
-  - Arduino uno r3
+  - Arduino Uno r3
   - 74HC4067DB multiplexer
   - nRF24l01+ PA+LNA module
   - SSD1306 display
@@ -32,5 +32,17 @@ For the boat:
   - L298N motor driver
   - 12V 3.4Ah lead acid battery
   
-*what are the different versions of the sketches?*
+**what are the different versions of the sketches?**
 
+Whenever a significant amount of new functionality was added I started a new version.
+For the controller:
+- v1: Simple transmission using int array. Used with rcboat v2.
+- v2: Introduction of structures, used with rcboat v3.
+- v3: Added acknowledgement packets, not compatible anymore.
+- v4: Added display, multiplexer and extra buttons. Used with rcboat v4.
+
+For the boat:
+- v1: Testing with motor driver and wireless connection. Direct value written to motor. Only for testing.
+- v2: Introduction of PWM target values. Motors now accelerate more slowly to reduce torque on axis. Used for maiden voyage.
+- v3: Transition from Uno to Mega, GPS and compass code added. Only for testing.
+- v4: Autononous mode ("autoMode") functionality added. Succesfully tested in the water.
