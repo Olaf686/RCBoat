@@ -39,13 +39,13 @@ const int autoModepin = 10;  //autonomous mode
 
 const int CE = 9;           //radio CE pin
 const int CSN = 10;         //radio CSN pin
-
-Mux mux(Pinset(s0, s1, s2, s3));  //multiplexer object
-
-Adafruit_SSD1306 display(128, 64, &Wire, -1);  //display object
-
-RF24 radio(CE, CSN);             //wireless object
 const byte address[5] = "00001";  //pipe address
+
+float latFromSerial;       //parsed lattitude from serial input
+float lonFromSerial;       //parsed longitude from serial input
+float batteryVoltage;      //calculated battery voltage
+float batteryPercentage;   //estimated battery charge
+int timer;                 //millis timer
 
 struct values{  //structure for control values
   bool up1;
@@ -75,11 +75,9 @@ struct info{  //structure for answer from boat
 struct values control;  //control values
 struct info answer;     //answer from boat
 
-float latFromSerial;       //parsed lattitude from serial input
-float lonFromSerial;       //parsed longitude from serial input
-float batteryVoltage;      //calculated battery voltage
-float batteryPercentage;   //estimated battery charge
-int timer;                 //millis timer
+Mux mux(Pinset(s0, s1, s2, s3));               //multiplexer object
+Adafruit_SSD1306 display(128, 64, &Wire, -1);  //display object
+RF24 radio(CE, CSN);                           //wireless object
 
 void setup() {
 
@@ -95,7 +93,7 @@ void setup() {
   Serial.begin(115200);   //set serial baudrate
   
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
-    Serial.println("SSD1306 allocation failed");
+    Serial.println(F("SSD1306 allocation failed"));
     for(;;); // Don't proceed, loop forever
   }
   
@@ -139,7 +137,7 @@ void loop() {
     }  
   
     if(radio.write(&control, sizeof(control))){  //send control values
-      Serial.println("Data sent successfully");
+      Serial.println(F("Data sent successfully"));
     
       if(radio.isAckPayloadAvailable()){                                     //do we get an answer back?
         radio.read(&answer, sizeof(answer));                                 //read answer
@@ -148,7 +146,7 @@ void loop() {
         answerToDisplay();                                                   //put all info on oled display
       }
       else{
-        Serial.println("Message received but no answer...");
+        Serial.println(F("Message received but no answer..."));
         display.clearDisplay();  //display message for no answer from boat
         display.setCursor(0, 1);
         display.print("RC Boat: no answer");
@@ -156,7 +154,7 @@ void loop() {
       }
     }
     else{
-      Serial.println("Data sending failed");  //display message for no connection to boat
+      Serial.println(F("Data sending failed"));  //display message for no connection to boat
       display.clearDisplay();
       display.setCursor(0, 1);
       display.print("RC Boat: no contact");
@@ -183,7 +181,7 @@ void answerToDisplay(){  //function for putting answer from boat on display
     display.print("Course: ");
     display.print(answer.boatHeading);
     display.print((char)248);
-    display.print(" at ");
+    display.print(" ");
     display.print(answer.boatSpeed, 1);
     display.print("km/h");
     
@@ -209,8 +207,6 @@ void answerToDisplay(){  //function for putting answer from boat on display
       display.print("+");
     display.print(answer.targetHeading);
     display.print((char)248);
-    
- 
     
     display.display();
     
