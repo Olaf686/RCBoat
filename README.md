@@ -22,7 +22,7 @@ For the controller:
   - Arduino Uno r3
   - 74HC4067DB multiplexer
   - nRF24l01+ PA+LNA module
-  - SSD1306 display
+  - SSD1306 128x64 i2c display
   - Random buttons from ebay
   - 2000 mAh USB powerbank
   
